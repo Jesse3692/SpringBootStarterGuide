@@ -5,7 +5,7 @@ import org.springframework.boot.web.servlet.server.ConfigurableServletWebServerF
 import org.springframework.context.annotation.Configuration;
 
 // @Configuration 表示该类为配置类，该注解可以被@ComponentScan扫描到
-@Configuration
+// @Configuration
 public class ServletConfig implements WebServerFactoryCustomizer<ConfigurableServletWebServerFactory> {
 @Override
 public void customize(ConfigurableServletWebServerFactory factory){
