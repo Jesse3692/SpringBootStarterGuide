@@ -1,4 +1,4 @@
-package com.shiyanlou.springboot;
+package com.shiyanlou.springboot.second;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,11 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * 设置表名为 user，并且标记该类为实体类
+ * 设置表名为 user_two，并标记该类为实体类
  */
-@Table(name = "user")
+@Table(name = "user_two")
 @Entity
-public class User {
+public class UserTwo {
 
     /**
      * 设置主键生成策略
