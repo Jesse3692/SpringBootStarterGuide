@@ -18,7 +18,7 @@ public class UserService {
         // 保存实体类
         userRepository.save(user);
         // 人为抛出异常
-        int shiyanlou = 1 / 0;
+        // int shiyanlou = 1 / 0;
         // 修改密码
         user.setPassword("123456");
         // 重新保存，更新记录
