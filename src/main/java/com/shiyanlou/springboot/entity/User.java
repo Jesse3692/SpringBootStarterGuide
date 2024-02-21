@@ -1,37 +1,17 @@
-package com.shiyanlou.springboot.second;
+package com.shiyanlou.springboot.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import java.io.Serializable;
 
-/**
- * 设置表名为 user_two，并标记该类为实体类
- */
-@Table(name = "user_two")
-@Entity
-public class UserTwo {
-
-    /**
-     * 设置主键生成策略
-     */
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Id
-    public int id;
-
-    @Column
+public class User implements Serializable {
+    private Integer id;
     private String username;
-
-    @Column
     private String password;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
